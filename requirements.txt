@@ -1,1 +1,10 @@
-python-nmap==0.7.1
+nmap==0.7.1
+enum4linux
+smbclient
+smbclient
+samba-common-bin
+# - nmap (install via: sudo apt install nmap)
+# -  (install via: sudo apt install enum4linux)
+# -  (install via: sudo apt install smbclient)
+# - nmblookup (install via: sudo apt install samba-common-bin)
+# - rpcclient (install via: sudo apt install samba-common-bin)
