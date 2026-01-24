@@ -53,6 +53,8 @@ class NmapHandler:
             
         Returns:
             Raw nmap output
+
+        -sV means service version detected which software is running.
         """
         command = f"nmap -sV -F {ip}"
         try:
@@ -78,6 +80,9 @@ class NmapHandler:
             
         Returns:
             Raw nmap output
+        -sV: Service version detection
+        -sC: Run default nmap scripts (safe checks for vulnerabilities)
+        -p-: Scan all 65535 ports (instead of just common ones)
         """
         command = f"nmap -sV -sC -p- {ip}"
         try:
@@ -156,6 +161,12 @@ class NmapHandler:
             
         Returns:
             Raw nmap output
+        -A: Enables OS detection, version detection, script scanning, traceroute
+        -T4: Timing template (faster/more aggressive)
+
+        T0 = slowest (paranoid)
+        T3 = default
+        T5 = fastest (insane)
         """
         command = f"nmap -A -T4 {ip}"
         try:
