@@ -4,7 +4,7 @@ Automated network enumeration tool for ethical hacking and security assessments.
 
 **Course:** CSCI 4449/6658 - Ethical Hacking  
 **Institution:** University of New Haven  
-**Semester:** Fall 2025
+**Semester:** Fall 2026
 
 ## Overview
 
